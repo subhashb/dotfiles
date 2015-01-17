@@ -1,0 +1,13 @@
+(add-to-list 'load-path "~/.emacs.d/custom")
+(package-initialize)
+
+(load "00common-setup.el")
+(load "01ruby.el")
+(load "03auto-complete.el")
+(load "05smart-parens.el")
+(load "06projectile.el")
+(load "07highlight-indentation.el")
+(load "08flyspell.el")
+(load "09markdown.el")
+(load "10rust.el")
+(load "11theme.el")
