@@ -2,7 +2,7 @@ set -g -x PATH /usr/local/bin $PATH
 
 # Paths
 # While you can use a single fish array to do this (space-separated list), this is easier to read
-set PATH ~/.rbenv/bin /usr/local/bin /usr/local/sbin $HOME/.bin $PATH
+set PATH ~/.rbenv/bin /usr/local/bin /usr/local/sbin $PATH
 
 # rbenv configuration
 set -gx RBENV_ROOT ~/.rbenv
@@ -14,6 +14,9 @@ set ALTERNATE_EDITOR ""
 set VISUAL $EDITOR
 alias ec "emacsclient -c -n"
 
+# For automatic addition of ssh key
+ssh-add
+
 alias gs "git status"
 alias gd "git diff"
 alias gp "git push origin "
@@ -24,4 +27,3 @@ alias gch "git checkout"
 alias gf "git fetch"
 
 alias b "bundle"
-
