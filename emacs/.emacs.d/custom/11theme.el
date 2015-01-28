@@ -1,1 +1,5 @@
-(load-theme 'solarized t)
+;; (load-theme 'solarized t)
+(load-theme 'base16-default t)
+;; (load-theme 'base16-tomorrow t)
+;; (load-theme 'base16-solarized t)
+;; (load-theme 'base16-railscasts t)
