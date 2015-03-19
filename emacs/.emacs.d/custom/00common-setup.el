@@ -48,15 +48,6 @@
           (lambda ()
             (setq term-buffer-maximum-size 10000)))
 
-;; js2-mode
-(setq js-indent-level 2)
-(setq js2-indent-level 2)
-(setq js2-basic-offset 2)
-(setq js2-bounce-indent-p t)
-
-;; handlebars-mode
-(require 'handlebars-mode)
-
 ;; Add Feature-Mode
 ;; Add Org-Mode
 

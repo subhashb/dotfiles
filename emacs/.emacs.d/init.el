@@ -36,3 +36,4 @@
 (load "09markdown.el")
 (load "10rust.el")
 (load "11theme.el")
+(load "12js.el")
