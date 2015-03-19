@@ -1,4 +1,5 @@
 (add-to-list 'load-path "~/.emacs.d/custom")
+(add-to-list 'load-path "~/.emacs.d/vendor")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
 (setq backup-directory-alist
@@ -15,6 +16,15 @@
 (add-hook 'window-setup-hook 'on-after-init)
 
 (package-initialize)
+
+;; ****** Line Numbers ******
+(global-linum-mode 1)
+
+;; ****** Auto-Indent ******
+(define-key global-map (kbd "RET") 'newline-and-indent)
+
+;; ****** Default shell for ansi-term ******
+(setq explicit-shell-file-name "/usr/local/bin/fish")
 
 (load "00common-setup.el")
 (load "01ruby.el")

@@ -59,3 +59,17 @@
 
 ;; Add Feature-Mode
 ;; Add Org-Mode
+
+;; Tramp
+(require 'tramp)
+(setq tramp-default-method "scp")
+
+;; Tail logs
+(add-to-list 'auto-mode-alist '("\\.log\\'" . auto-revert-mode))
+
+;; eww numbering
+(eval-after-load "eww"
+  '(progn (define-key eww-mode-map "f" 'eww-lnum-follow)
+          (define-key eww-mode-map "F" 'eww-lnum-universal)))
+
+(setq backup-directory-alist `(("." . "~/.emacs.d/backups")))
